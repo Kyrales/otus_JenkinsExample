@@ -4,7 +4,7 @@
   "edtVersion": "",
   "srcDir": "src/cf",
   "sourceFormat": "designer",
-  "defaultBranch": "main",
+  "defaultBranch": "storage_1c",
   "secrets": {
     "storagePath": "Path_Otus_Storage_ID",
     "storage": "DeployGit_id",
