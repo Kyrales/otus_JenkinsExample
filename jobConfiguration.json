@@ -50,9 +50,7 @@
         "initMethod": "fromSource",
         "name": "YAXUNIT",
         "path": "./src/cfe/yaxunit",
-        "stages": [
-          "yaxunit"
-        ]
+        "stages": []
       }
     ]
   },
