@@ -7,7 +7,7 @@
   },
   "run": {
     "--command": "ЗапуститьОбновлениеИнформационнойБазы;ЗавершитьРаботуСистемы;",
-    "--execute": "$runnerRoot/epf/ЗакрытьПредприятие.epf"
+    "--execute": ""
   },
   "vanessa": {
     "--vanessasettings": "./tools/VAParams.json",
