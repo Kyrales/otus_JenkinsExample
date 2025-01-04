@@ -1,0 +1,150 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Kyrales/jenkins-lib/otus/resources/schema.json",
+  "v8version": "8.3.25.1394",
+  "edtVersion": "",
+  "srcDir": "src/cf",
+  "sourceFormat": "designer",
+  "defaultBranch": "main",
+  "secrets": {
+    "storagePath": "Path_Otus_Storage_ID",
+    "storage": "DeployGit_id",
+    "telegramBotToken": "UNKNOWN_ID",
+    "telegramChatId": "UNKNOWN_ID"
+  },
+  "stages": {
+    "initSteps": true,
+    "sonarqube": false,
+    "bdd": false,
+    "syntaxCheck": false,
+    "edtValidate": false,
+    "smoke": false,
+    "yaxunit": true,
+    "email": true,
+    "telegram": false
+  },
+  "timeout": {
+    "smoke": 240,
+    "yaxunit": 240,
+    "bdd": 120,
+    "getBinaries": 60,
+    "createInfoBase": 60,
+    "loadConfiguration": 60,
+    "designerToEdtFormatTransformation": 60,
+    "edtToDesignerFormatTransformation": 60,
+    "edtValidate": 240,
+    "initInfoBase": 60,
+    "loadExtensions": 60,
+    "resultTransformation": 10,
+    "sonarqube": 90,
+    "syntaxCheck": 240,
+    "zipInfoBase": 60
+  },
+  "initInfobase": {
+    "initMethod": "fromStorage",
+    "runMigration": true,
+    "additionalInitializationSteps": [],
+    "templateDBPath": "e:/1C/build/Demo83_otus/1Cv8.1CD",
+    "vrunnerSettings": "./tools/vrunner.json",
+    "extensions": [
+      {
+        "initMethod": "fromSource",
+        "name": "YAXUNIT",
+        "path": "src/cfe/yaxunit",
+        "stages": []
+      }
+    ]
+  },
+  "bdd": {
+    "vrunnerSteps": [
+      "vanessa --settings ./tools/vrunner.json"
+    ]
+  },
+  "sonarqube": {
+    "sonarQubeInstallation": "",
+    "useSonarScannerFromPath": true,
+    "sonarScannerToolName": "sonar-scanner",
+    "infoBaseUpdateModuleName" : "",
+    "branchAnalysisConfiguration": "fromEnv",
+    "waitForQualityGate": false
+  },
+  "syntaxCheck": {
+    "groupErrorsByMetadata": true,
+    "pathToJUnitReport": "./build/out/jUnit/syntax.xml",
+    "exceptionFile": "./tools/syntax-check-exception-file.txt",
+    "checkModes": [
+      "-ThinClient",
+      "-Server",
+      "-ConfigLogIntegrity",
+      "-HandlersExistence",
+      "-ExtendedModulesCheck",
+      "-ExternalConnection"
+    ],
+    "vrunnerSettings": "./tools/vrunner.json"
+  },
+  "smoke": {
+    "vrunnerSettings": "./tools/vrunner.json",
+    "xddConfigPath": "./tools/xUnitParams.json",
+    "publishToAllureReport": false,
+    "publishToJUnitReport": true
+  },
+  "yaxunit": {
+    "vrunnerSettings": "./tools/vrunner.json",
+    "configPath": "./tools/yaxunit.json",
+    "publishToAllureReport": true,
+    "publishToJUnitReport": false
+  },
+  "resultsTransform": {
+    "transformer": "stebi",
+    "genericIssueFormat": "Generic_Issue_10_3",
+    "removeSupport": true,
+    "supportLevel": 0
+  },
+  "notifications": {
+    "email": {
+      "onAlways": true,
+      "onFailure": true,
+      "onUnstable": false,
+      "onSuccess": false,
+      "alwaysOptions": {
+        "attachLog": false,
+        "directRecipients": [],
+        "recipientProviders": [
+          "developers",
+          "requestor"
+        ]
+      },
+      "failureOptions": {
+        "attachLog": true,
+        "directRecipients": [],
+        "recipientProviders": [
+          "developers",
+          "requestor",
+          "brokenBuildSuspects"
+        ]
+      },
+      "successOptions": {
+        "attachLog": false,
+        "directRecipients": [],
+        "recipientProviders": [
+          "developers",
+          "requestor"
+        ]
+      },
+      "unstableOptions": {
+        "attachLog": false,
+        "directRecipients": [],
+        "recipientProviders": [
+          "developers",
+          "requestor"
+        ]
+      }
+    },
+    "telegram": {
+      "onAlways": true,
+      "onFailure": false,
+      "onUnstable": false,
+      "onSuccess": false
+    }
+  },
+  "logosConfig": ""
+}
