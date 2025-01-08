@@ -13,7 +13,7 @@
   },
   "stages": {
     "initSteps": true,
-    "sonarqube": false,
+    "sonarqube": true,
     "bdd": true,
     "syntaxCheck": false,
     "edtValidate": false,
@@ -63,10 +63,10 @@
   },
   "sonarqube": {
     "sonarQubeInstallation": "",
-    "useSonarScannerFromPath": true,
+    "useSonarScannerFromPath": false,
     "sonarScannerToolName": "sonar-scanner",
     "infoBaseUpdateModuleName" : "",
-    "branchAnalysisConfiguration": "fromEnv",
+    "branchAnalysisConfiguration": "auto",
     "waitForQualityGate": false
   },
   "syntaxCheck": {
