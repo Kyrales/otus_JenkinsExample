@@ -91,7 +91,7 @@
   },
   "coverage": {
     "dbgsPath": "",
-    "coverage41CPath": "c:/tools/Coverage/bin"
+    "coverage41CPath": "c:/tools/Coverage/bin/Coverage41C.bat"
   },
   "yaxunit": {
     "vrunnerSettings": "./tools/vrunner.json",
