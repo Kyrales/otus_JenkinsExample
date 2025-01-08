@@ -89,11 +89,17 @@
     "publishToAllureReport": false,
     "publishToJUnitReport": true
   },
+  "coverage": {
+    "dbgsPath": "",
+    "coverage41CPath": "c:/tools/Coverage/bin"
+  },
   "yaxunit": {
     "vrunnerSettings": "./tools/vrunner.json",
     "configPath": "./tools/yaxunit.json",
     "publishToAllureReport": true,
-    "publishToJUnitReport": false
+    "publishToJUnitReport": false,
+    "coverage": true,
+    "dbgsPort": 1550
   },
   "resultsTransform": {
     "transformer": "stebi",
