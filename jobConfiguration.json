@@ -63,7 +63,7 @@
   },
   "sonarqube": {
     "sonarQubeInstallation": "",
-    "useSonarScannerFromPath": false,
+    "useSonarScannerFromPath": true,
     "sonarScannerToolName": "sonar-scanner",
     "infoBaseUpdateModuleName" : "",
     "branchAnalysisConfiguration": "auto",
