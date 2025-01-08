@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Kyrales/vanessa-usher_mod/refs/heads/my_dev/resources/schema.json",
   "agent": "gitsync",
-  "v8Version": "8.3.25.1394",
+  "v8Version": "8.3.25.1501",
   "defaultInfobase": {
     "connectionString": "/Fe:/1C/build/Demo83_otus_clear",
     "auth": ""

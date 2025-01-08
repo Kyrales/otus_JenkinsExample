@@ -27,7 +27,7 @@
       "path": "tcp://KyralesGun/Storage/storage.1ccr/StorageOtus",
       "dir": "./src/cf",
       "temp-dir": "",
-      "v8version": "8.3.25.1394",
+      "v8version": "8.3.25.1501",
       "plugins-config": {
         "URL": "https://github.com/Kyrales/otus_JenkinsExample.git"
       }
@@ -38,7 +38,7 @@
         "path": "tcp://KyralesGun/Storage/storage.1ccr/StorageOtus_yaxunit",
         "dir": "./src/cfe/yaxunit",
         "temp-dir": "",
-        "v8version": "8.3.25.1394",
+        "v8version": "8.3.25.1501",
         "plugins-config": {
           "URL": "https://github.com/Kyrales/otus_JenkinsExample.git"
         }
