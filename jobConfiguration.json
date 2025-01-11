@@ -98,7 +98,7 @@
     "configPath": "./tools/yaxunit.json",
     "publishToAllureReport": true,
     "publishToJUnitReport": false,
-    "coverage": false,
+    "coverage": true,
     "dbgsPort": 1550
   },
   "resultsTransform": {
