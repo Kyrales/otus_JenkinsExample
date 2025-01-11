@@ -59,7 +59,9 @@
   "bdd": {
     "vrunnerSteps": [
       "vanessa --settings ./tools/vrunner.json"
-    ]
+    ],
+    "coverage": true,
+    "dbgsPort": 1550
   },
   "sonarqube": {
     "sonarQubeInstallation": "",
