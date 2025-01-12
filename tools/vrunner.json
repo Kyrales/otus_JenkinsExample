@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/vanessa-opensource/vanessa-runner/refs/heads/develop/vanessa-runner-schema.json",
   "default": {
     "--workspace": ".",
-    "--additional": "/DisplayAllFunctions /Lru  /iTaxi /debug -http -attach /debuggerURL http://localhost:1550",
+    "--additional": "/DisplayAllFunctions /Lru  /iTaxi /debug -http -attach /debuggerURL http://localhost:1551",
     "--ordinaryapp": "-1"
   },
   "run": {

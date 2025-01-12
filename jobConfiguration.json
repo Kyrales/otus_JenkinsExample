@@ -101,7 +101,7 @@
     "publishToAllureReport": true,
     "publishToJUnitReport": false,
     "coverage": true,
-    "dbgsPort": 1550
+    "dbgsPort": 1551
   },
   "resultsTransform": {
     "transformer": "stebi",
