@@ -15,7 +15,7 @@
     "initSteps": true,
     "sonarqube": true,
     "bdd": true,
-    "syntaxCheck": false,
+    "syntaxCheck": true,
     "edtValidate": false,
     "smoke": false,
     "yaxunit": true,
