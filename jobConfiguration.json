@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Kyrales/jenkins-lib/otus/resources/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Kyrales/jenkins-lib/devkyr/resources/schema.json",
   "v8version": "8.3.25.1501",
   "edtVersion": "",
   "srcDir": "src/cf",
@@ -71,7 +71,6 @@
   },
   "syntaxCheck": {
     "groupErrorsByMetadata": true,
-    "pathToJUnitReport": "./build/out/jUnit/syntax.xml",
     "exceptionFile": "./tools/syntax-check-exception-file.txt",
     "checkModes": [
       "-ThinClient",
@@ -81,7 +80,9 @@
       "-ExtendedModulesCheck",
       "-ExternalConnection"
     ],
-    "vrunnerSettings": "./tools/vrunner.json"
+    "vrunnerSettings": "./tools/vrunner.json",
+    "publishToAllureReport": true,
+    "publishToJUnitReport": false
   },
   "smoke": {
     "vrunnerSettings": "./tools/vrunner.json",
