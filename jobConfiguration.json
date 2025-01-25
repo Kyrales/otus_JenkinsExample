@@ -97,7 +97,7 @@
   "yaxunit": {
     "vrunnerSettings": "./tools/vrunner.json",
     "configPath": "./tools/yaxunit.json",
-    "publishToAllureReport": false,
+    "publishToAllureReport": true,
     "publishToJUnitReport": true,
     "coverage": false,
     "dbgsPort": 1550
