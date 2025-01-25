@@ -1,23 +1,26 @@
 {
-  "reportPath": "./build/out/allure/yaxunit",
+  "reportPath": "./build/out/yaxunit/junit.xml",
   "closeAfterTests": true,
   "filter": {
     "extensions": [
       "YAXUNIT"
-    ]
+    ],
+    "modules": null,
+    "suites": null,
+    "tags": null,
+    "contexts": null,
+    "paths": null,
+    "tests": null
   },
   "settings": {
     "ВТранзакции": true
   },
-  "reportFormat": "allure",
+  "reportFormat": "jUnit",
   "showReport": false,
   "logging": {
-    "file": "./build/out/allure/yaxunit/logs.log",
-    "console": true,
     "enable": true,
-    "level": "debug"
+    "console": true,
+    "level": "info"
   },
-  "exitCode": "./build/out/allure/yaxunit/result.txt",
-  "projectPath": "",
-  "ПодключатьВнешниеКомпоненты": true
+  "exitCode": "./build/out/yaxunit/result.txt"
 }
