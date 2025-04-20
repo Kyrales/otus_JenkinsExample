@@ -62,7 +62,7 @@
     ]
   },
   "sonarqube": {
-    "sonarQubeInstallation": "",
+    "sonarQubeInstallation": "SonarQube10_proxmox",
     "useSonarScannerFromPath": true,
     "sonarScannerToolName": "sonar-scanner",
     "infoBaseUpdateModuleName" : "",
